@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase.init";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const SignUp = () => {
@@ -92,7 +93,7 @@ const SignUp = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Login</button>
+                    <button className="btn btn-primary">Sign Up</button>
                 </div>
             </form>
             {
@@ -101,6 +102,8 @@ const SignUp = () => {
             {
                 success && <p className="text-green-600">Account Successfully Created</p>
             }
+
+            <p className="text-center m-2">Already have an account? <Link className="text-green-300 font-bold" to={'/login'}>Login</Link></p>
         </div>
     );
 };

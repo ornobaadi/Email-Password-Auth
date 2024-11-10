@@ -50,7 +50,7 @@ const Register = () => {
                     </svg>
                     <input type="password" name="password" className="grow" placeholder="Password" />
                 </label>
-                <button className="btn btn-accent btn-wide">Login</button>
+                <button className="btn btn-accent btn-wide">Register</button>
             </form>
         </div>
     );
